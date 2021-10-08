@@ -28,7 +28,7 @@ async def start(bot, message):
             f"#NEWUSER: \n\nNew User [{message.from_user.first_name}](tg://user?id={message.from_user.id}) started @{BOT_USERNAME} !!",
         )
     usr_cmdall1 = message.text
-    if usr_cmdall1.startswith("/start pr0fess0r_99"):
+    if usr_cmdall1.startswith("/start"):
         if AUTH_CHANNEL:
             invite_link = await bot.create_chat_invite_link(int(AUTH_CHANNEL))
             try:
@@ -84,7 +84,7 @@ async def start(bot, message):
                     f_caption = f"{files.file_name}"
                 buttons = [
                     [
-                        InlineKeyboardButton('🎖 DEPLOY YOURS 🎖', url=f'{TUTORIAL}')
+                        InlineKeyboardButton('🎖 our channel 🎖', url=f'https://t.me/noughtyland')
                     ]
                     ]
                 await bot.send_cached_media(
@@ -118,7 +118,7 @@ async def start(bot, message):
                 InlineKeyboardButton("Search Here", switch_inline_query_current_chat='')
                 ],[
                 InlineKeyboardButton("Help", callback_data="help"),
-                InlineKeyboardButton("About", callback_data="about")
+                InlineKeyboardButton("🤪me🤪", callback_data="about")
                 ]]
             )
         )
@@ -331,7 +331,7 @@ async def bot_info(bot, message):
     buttons = [
         [
             
-            InlineKeyboardButton('Deploy Video', url=f'{TUTORIAL}')
+            InlineKeyboardButton('❌our officialchannel❌', url=f'https://t.me/nougtyoffocialchannel')
         ]
         ]
-    await message.reply(text=f"{ABOUT}", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+    await message.reply(text=f"{🤪me🤪}", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
