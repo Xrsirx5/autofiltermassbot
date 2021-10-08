@@ -334,4 +334,4 @@ async def bot_info(bot, message):
             InlineKeyboardButton('❌our officialchannel❌', url=f'https://t.me/nougtyoffocialchannel')
         ]
         ]
-    await message.reply(text=f"{🤪me🤪}", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+    await message.reply(text=f"{me}", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
